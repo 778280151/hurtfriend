@@ -12,15 +12,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 
-@SpringBootApplication  
+@SpringBootApplication
 @MapperScan("com.safecode.dao")
-@ComponentScan( basePackages = "com.safecode")
+@ComponentScan(basePackages = "com.safecode")
 @EnableAutoConfiguration
 public class DemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
-    
 //    @Bean
 //    PageHelper pageHelper(){
 //        //分页插件
